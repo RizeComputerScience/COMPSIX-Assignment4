@@ -1,8 +1,4 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
-
-// In-memory storage for books
+// Books for bookstore API
 let books = [
     {
         id: 1,
@@ -25,26 +21,24 @@ let books = [
         genre: "Dystopian Fiction",
         copiesAvailable: 7
     }
+    // Add more books if you'd like!
 ];
 
-
-//  Create your REST API here
-
-
-
-
-
-
-
+/* Create your REST API here with the following endpoints:
+    'GET /api/books': 'Get all books',
+    'GET /api/books/:id': 'Get a specific book',
+    'POST /api/books': 'Add a new book',
+    'PUT /api/books/:id': 'Update a book',
+    'DELETE /api/books/:id': 'Delete a book'
+*/
 
 
 
 
 
-// Start the server
-const server = app.listen(PORT, () => {
-    console.log(`Bookstore API running on port ${PORT}`);
-    console.log(`Visit http://localhost:${PORT} to see available endpoints`);
-});
 
-module.exports = { app, server };
+
+
+
+
+
